@@ -1,38 +1,1343 @@
-.App {
-  text-align: center;
+:root{
+	--primary: rgb(153,13,37);
+	--font: rgb(255,253,208);
+	--brown: rgb(107,32,24);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: "Storia-l";
+	src: url('../src/utils/fonts/Storia-Light.otf') format("opentype");
+}
+@font-face {
+	font-family: "Storia-r";
+	src: url('../src/utils/fonts/Storia-Regular.otf') format("opentype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body,html{
+    margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	background-color:var(--primary);
+	font-family: "Storia-r";
+	-ms-overflow-style: none;  /* IE and Edge */
+	  scrollbar-width: none;  /* Firefox */
+	  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+	display: none;
   }
+
+	
+li,a,p,h1,h2,h3,h4{
+	text-shadow: 2px 1px 1px #000000;
+}
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+footer{
+    height: 200px;
+	border-bottom: 10px solid rgb(33,37,40);
+	position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+video {
+    object-fit: fill;
+}
+.video-section{
+	display: flex;
+	justify-content: center;
+	
+}
+/* animation keyframes */
+@keyframes animateJumbo {
+	0%{
+		top:200%;
+	}
+	100%{
+		top:20%;
+	}
+}
+@keyframes fadeIn {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes overlayBlack {
+	0%{
+		background-color:black;
+	}
+	100%{
+		background-color:var(--primary);
+	}
+}
+#form-h{
+	text-align: center;
+	font-size: 8vw;
+	color: var(--font);
+	margin-top: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.underline{
+	height: 8px;
+    background-color: var(--font);
+    opacity: 1;
+    width: 50%;
+    margin: 0 auto;
+}
+.page-l{
+	height: 115%;
+	background-color: #000;
+}
+.footer-spacer{
+	height: 120px;
+	width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.home{
+	margin-bottom:100px;
+	animation: fadeIn 3s ease-out;
+	transition: overlayBlack 3s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.row-image{
+	width: 100px;
+	margin: 0 auto;
+}
+.row{
+	color: var(--font);
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+li {
+	color: var(--font);
+}
+::marker{
+	color: var(--font);
+}
+#navbar{
+	background-image:linear-gradient(to right,var(--primary),var(--primary),var(--primary),black,black);
+	color: var(--font);
+	box-shadow: 4px 5px 3px black;
+}
+
+.navbar a{
+	color:var(--font);
+}
+a:hover{
+	color: var(--font) !important;
+
+}
+
+
+#form{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.container{
+	width:50%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	left:25%;
+	top:50%;
+}
+.home{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+}
+.home section{
+	width: 100%;
+	margin: 0 auto;
+}
+.home-btn{
+	border:solid var(--font);
+	border-radius: 15px;
+	width:40vw;
+	margin:0 auto;
+	background-color: var(--font);
+    margin-top: 2%;
+}
+.home-btn a{
+	font-size: 5vw;
+    color: var(--primary);
+	text-decoration: none;
+	white-space: nowrap;
+	text-shadow: none;
+}
+.home-logo{
+	width:40vh;
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+}
+.nav-logo{
+	width: 12vw;
+    min-width: 40px;
+    max-width: 65px;
+}
+@media screen and (min-width:575px) and (max-width:400px){
+	.nav-logo {
+		max-width: 1px !important;
+	}
+}
+.navbar-toggler{
+	background-color: var(--font);
+}
+.nav-item{
+	font-size:1.8rem;
+}
+.parallax{
+    position: relative;
+    background-image: url("https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/shop/Shop-lobby.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 108%;
+}
+
+
+#id_reference{
+	font-family: sans-serif !important;
+}
+
+.parallax-text{
+	position: absolute;
+	top:20%;
+    width: 100%;
+    text-align: center;
+	text-transform: uppercase;
+	animation: animateJumbo 3s ease;
+}
+.parallax-text .border{
+	background-color: var(--brown);
+    color: var(--font)
+}
+.logo{
+	font-size: 16vw;
+    padding-bottom: 6%;
+}
+.title-sec{
+	height: 100%;
+	position: relative;
+}
+.location-sec{
+	position: relative;
+	display: flex;
+  	justify-content: center;
+}
+.location-header{
+	font-size: 4rem;
+}
+.location-sec ul{
+	padding:0;
+}
+.location-hp-container, .booking-hp-container{
+	display: flex;
+    flex-direction: row;
+	top: 20%;
+	left: 10%;
+	width: 100%;
+}
+.location > .container, .booking > .container{
+	display: flex;
+    flex-direction: column;
+	top: 20%;
+	left: 10%;
+	width: 100%;
+}
+.loc-right{
+	width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.loc-left{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+.instagram-block{
+	position: relative;
+	width:100%;
+	display: flex;
+}
+.insta-right{
+	width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.insta-left{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin-top: 17%;
+}
+.insta-left button{
+	margin-left: 10%;
+    font-size: 3vw;
+    background-color: var(--primary);
+    color: var(--font);
+    border-radius: 15px;
+}
+.insta-left p{
+	margin-left: 10%;
+	font-size: 5vw;
+	font-family: sans-serif;
+}
+.errorlist{
+	font-family: sans-serif !important;
+}
+
+.s-artist-instagram{
+	text-align: center;
+}
+.s-artist-instagram h4{
+	color: var(--font);
+    padding-top: 5%;
+    font-size: 6vw;
+}
+.s-artist-contact-btn{
+	color: var(--primary);
+    background-color: var(--font);
+    border-radius: 15px;
+    width: 20vw;
+    font-size: 3vw;
+}
+
+.location-sec img{
+	width: 100%;
+	height: auto;
+}
+.location-sec h4,p{
+	list-style: none;
+	color: var(--font);
+}
+.location-sec p{
+	list-style: none;
+	color: var(--font);
+	font-size: 1.5rem;
+}
+.location-hp-sec{
+	height: 50%;
+	max-width: 1440px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width:1220px){
+.location-hp-sec{
+	height: 60%;
+}
+#form-h{
+	font-size:5rem;
+}
+}
+ /* iphone 11 max pro */
+@media screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+	.booking-sec{
+		height: 200% !important;
+	}
+	.home {
+		margin-bottom: 16%;
+	}
+	.loc-left {
+		width: 100%;
+	}
+ }
+ /* iphone 12 max pro */
+ @media screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+	.booking-sec{
+		height: 200% !important;
+	}
+	.home {
+		margin-bottom: 14%;
+	}
+	.loc-left {
+		width: 100%;
+	}
+ }
+.location-hp-sec img{
+	width: 100%;
+	height: auto;
+}
+.location-hp-sec h4,p{
+	list-style: none;
+	color: var(--font);
+}
+.location-hp-sec p{
+	list-style: none;
+	color: var(--font);
+	font-size: 2.5rem;
+	margin: 0 auto;
+    padding: 10px;
+}
+.booking-sec{
+	height: 115%;
+    position: relative;
+    display: flex;
+	justify-content: center;
+	background: #000000;
+}
+.booking-hp-sec{
+	position: relative;
+    background-image: url("https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/shop/shop2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	max-width: 1440px;
+	margin: 0 auto;
+    display: flex;
+	justify-content: center;
+	height: 80%;
+}
+
+.booking-hp-text{
+	padding:5%;
+	background: rgba(255, 255, 255, 0.11);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.23);
+}
+.booking-hp-text button{
+	width: 55%;
+	max-width:392px;
+    font-size: 2rem;
+	white-space: nowrap;
+	background-color: var(--font);
+}
+.booking-hp-text h2{
+    font-size: 3.2rem;
+}
+.booking-hp-text hr{
+	padding-bottom: 10px;
+}
+.booking-container{
+	width: 90%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	top: 0;
+}
+
+@media screen and (min-width:768px){
+	.booking-container{
+		top:15%;
+	}
+}
+.text-container {
+	width:80%;
+	margin-top: 15%;
+    font-size: 1.4rem;
+}
+.booking-right{
+	width: 50%;
+}
+.booking-content{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top:20%;
+    width: 100%;
+    text-align: center;
+	color: var(--font);
+}
+#home-booking-header{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.thumbnail{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+.thumbnail-alt{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	display:none;
+}
+
+.artist-sec{
+	background-color: var(--primary);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+.artist-hp-list{
+	margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.artist-header{
+	width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.artist-header h4{
+    color: var(--font);
+    font-size: 14vw;
+    padding: 26px 10px;	
+}
+.artist-sec ul{
+	display: grid;
+    grid-template-columns: minmax(33%, 33%) minmax(33%, 33%) minmax(33%, 33%);
+    grid-row-gap: 2%;
+    grid-column-gap: 2%;
+    justify-content: center;
+    width: 90%;
+}
+.artist-tile{
+	display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+	text-align: center;
+}
+.s-artist-instagram{
+background-color: #000000;
+}
+.tile:hover{
+transform: scale(1.05);
+}
+.guest-sec{
+	height: 100%;
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+}
+.guest-tile a{
+	text-decoration: none !important;
+}
+.guest-name{
+	word-break: break-all;
+	white-space: normal;
+	font-size: 2.5rem;
+}
+.guest-container{
+	width:80%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.guest-h{
+	font-size: 4rem;
+	color: var(--font);
+}
+.guest-right{
+	width: 100%;
+    height: 50%;
+	text-align: center;
+}
+.guest-left{
+	width: 100%;
+    height: 50%;
+	text-align: center;
+	margin-bottom:50px;
+}
+.guest-tile{
+	display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: center;
+    position: relative;
+    width:40%;
+    height: 100%;
+	
+}
+.guest-tile img{
+	height: 100%;
+    width: 100%;
+	border-radius: 50%;
+}
+
+.guest-tile p{
+	position: unset;
+}
+.guest-list{
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+#artist-tile-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* GALLERY */
+.s-artist-gallery{
+	display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(2,3fr);
+    grid-auto-flow: dense;
+	grid-auto-rows: 20%;
+	max-width: 1000px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.s-artist-gallery > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-artist-gallery > div > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.artist-headshot{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	position: absolute;
+}
+.artist-row{
+	width: 100vw !important;
+    display: flex;
+	justify-content: center;
+	padding-bottom: 8%;
+}
+.artist-row-info{
+	width:20%;
+}
+.artist-row-hs{
+	width:20%;
+}
+.artist-row-header{
+	position: relative;
+}
+.artist-name{
+	position: absolute;
+    bottom: 1%;
+    left: 10%;
+	font-size: 3rem;
+	padding-bottom: 1%;
+}
+.artist-row li{
+	list-style: none;
+	width: 100%;
+}
+.artist-tile-name{
+	margin: 0 auto;
+    color: var(--font);
+    position: absolute;
+    font-size: 6vw;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+}
+.apprentice{
+	position: absolute;
+    font-size: 2vw;
+    bottom:-3%;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+}
+.artists-header{
+	color: var(--font);
+    padding-top: 40px;
+    margin-left: 9%;
+    font-size: 5rem;
+}
+.artists-page{
+	background:black;
+	height:100%;
+	width:100%;
+	position:relative;
+	padding-top: 10%;
+	color: var(--font);
+}
+
+.tattoo-tiles{
+	position: relative;
+	width:100%;
+}
+.tattoo-tiles img{
+	width: 100%;
+}
+.prev-arrow:before {
+	content: "<";
+}
+.next-arrow:before {
+	content: ">";
+}
+.next-arrow{
+	position: absolute;
+	right: 1%;
+	top:29%;
+	z-index: 99;
+	background: transparent;
+	color: var(--primary);
+	font-size: 4rem;
+	border: none;
+}
+.slick-disabled {
+	display: none !important;
   }
-  to {
-    transform: rotate(360deg);
+
+.prev-arrow{
+	position: absolute;
+	left: 0;
+	top:29%;
+	z-index: 99;
+	background: transparent;
+	color: var(--primary);
+	font-size: 4rem;
+	border: none;
+}
+.artist-block{
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+	margin: 0 auto;
+	text-decoration: none;
+	color: inherit;
+}
+.artist-insta-link{
+	text-decoration: none !important;
+	text-align: center;
+}
+.artist-block img{
+	width: 128%;
+
+	transition: all .2s ease-in-out; 
+}
+.s-artist-headline{
+ font-size: 10vw;
+}
+.single-artist{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	color: var(--font);
+}	
+.single-artist p{
+	padding-top: 5%;
+    width: 95%;
+	font-size: 3vw;
+	font-family: sans-serif;
+}
+
+.single-artist img{
+	width: 100%;
+	height: auto;
+}
+.slick-slide img{
+	min-height: 340px;
+	padding-left: 3px;
+}
+.parallax-wrapper {
+	overflow-y: hidden !important;
+}
+
+input[type=text], input[type=email],textarea{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
   }
+  .booking-right .form-control{
+	background: transparent;
+	border: none;
+	text-align: center;
+}
+input[type=submit]{
+	width:70%;
+	color: var(--font);
+	background-color: var(--primary);
+	border: 2px solid var(--font);
+	border-radius: 15px;
+	font-size: 1.5rem;
+}
+.booking-left li{
+	color: var(--font);
+}
+.booking-left{
+	font-family: sans-serif;
+}
+.booking-right label{
+	font-family: sans-serif;
+}
+@media screen and (max-width:767px){
+	.artist-tile-name{
+		font-size:10vw;
+	}
+.container{
+	width: 80%;
+	left: 10%;
+}
+
+.location-header{
+	font-size: 2rem;
+}
+.location-sec p{
+	margin-bottom: 0.5rem;
+}
+.location-hp-container{
+    flex-direction: column;
+	justify-content: center;
+}
+.location-hp-sec{
+	height: 70%;
+}
+.loc-left{
+	width: 100%;
+	margin: 0 auto;
+}
+.loc-left img{
+	height: 100%;
+	margin: 0 auto;
+}
+.loc-right{
+	margin-top:15px;
+	width:100%;
+}
+.booking-hp-container{
+	flex-direction: column;
+    justify-content: center;
+}
+.book-left{
+	width: 100%;
+	height: 40%;
+    text-align: center;
+}
+.book-right{
+	width: 100%;
+    height: 60%;
+}
+.book-right img{
+	height: 100%;
+}
+.booking-container{
+	flex-direction: column;
+	top:0;
+}
+.booking-left p{
+	text-align: center;
+}
+.booking-left{
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	font-size:1.5rem;
+}
+.booking-right{
+	width:100%
+}
+.booking-right form{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+
+  .booking-right form > p{
+	width:100%
+  }
+.artist-tile{
+	display: block;
+    justify-content: center;
+    position: relative;
+   	text-align: center;
+    list-style: none;
+    width: 100%;
+    height: 95%;
+    transition: none; 
+}
+.artist-sec{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15%;
+}
+.artists-header{
+	text-align: center;
+	margin-left: unset;
+}
+.artist-row-header {
+	width: 100%;
+	
+}
+
+#artist-tile-img{
+	position: unset;
+	height: 106%;
+}
+.single-artist{
+	margin-top:0;
+}
+.s-artist-headline{
+	font-size:18vw;
+}
+.book-right img{
+	max-height: unset;
+}
+
+.guest-sec{
+	height: 50%;
+}
+.guest-container{
+	flex-direction: column;
+	width:100%;
+}
+.guest-right{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-bottom: -20%;
+}
+.guest-left{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-bottom:10%;
+}
+.guest-list{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	text-decoration: none;
+}
+.location-sec{
+	height: 25%;
+}
+.booking-sec{
+	height:136%;
+}
+.booking-sec .container{
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+}
+.guest-tile p {
+	position: unset;
+}
+
+.guest-h{
+	font-size: 8vw;
+}
+.slick-list{
+	height: 80% !important;
+}
+.slick-slide img {
+	min-width: 175px;
+}
+.guest-right > .guest-list{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+.guest-left > .guest-list{
+	padding-bottom: 15%;
+}
+.guest-tile{
+	display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+#guest-tile-img {
+    width: 100%;
+    height: auto;
+}
+.booking-content{
+
+    width: 80%;
+
+}
+
+}
+
+@media screen and (min-width:1563px){
+	.artist-sec ul {
+		grid-template-columns: repeat(4, minmax(20rem, 1fr));
+}
+.home-btn a{
+	font-size: 60px;
+}
+.artist-tile-name{
+	font-size: 70px;
+}
+.apprentice{
+	font-size: 20px;
+}
+.artist-header h4 {
+	font-size: 150px;
+}
+}
+@media screen and (min-width:696px) and (max-width:932px) {
+	.artist-sec ul {
+		grid-template-columns: minmax(50%, 50%) minmax(50%, 50%);
+		grid-row-gap: 1%;
+    	grid-column-gap: 1%;
+}
+.artist-tile-name{
+	font-size: 7vw;
+}
+.artist-row-header{
+	font-size: 2.2rem;
+	padding-bottom: 0;
+	width: 100%;
+    text-align: center;
+}
+.artist-name{
+	font-size: 3.2rem;
+	position: unset;
+	bottom: 0 !important;
+	left: 0 !important;
+	padding-bottom: 0 !important;
+	
+}
+.video-section {
+    width: 100%;
+}
+.video-section > video{
+	width:100%
+}
+
+}
+.instagram-block{
+	position: relative;
+	width:100%;
+	display: flex;
+	height: 40vh;
+}
+.insta-right img{
+	height: 100%;
+}
+@media screen and (min-width:800px){
+	.instagram-block{
+		position: relative;
+		width:100%;
+		display: flex;
+		height: auto;
+	}
+	.insta-right img{
+		height: 100%;
+	}
+}
+@media screen and (max-width:695px){
+	.artist-sec ul {
+		grid-template-columns: minmax(100%, 100%);
+		grid-row-gap: 1vh;
+    	padding: 0;
+    	width: 100%;
+}
+.apprentice{
+	bottom: -8% !important;
+	font-size: 6vw;
+}
+.video-section {
+    width: 100%;
+}
+.video-section > video{
+	width:100%
+}
+#artist-tile-name{
+	font-size: 5.8vw;
+}
+.artist-row-header{
+	font-size: 2.2rem;
+	padding-bottom: 0;
+	width: 100%;
+    text-align: center;
+}
+.artist-sec {
+    width: 94%;
+    height: auto;
+	margin-bottom: 31%;
+}
+.artist-name{
+	position: unset;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 0;
+	font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+.artists-header{
+	text-align: center;
+	margin-left: unset;
+}
+.booking-hp-text h2{
+	font-size: 8vw;
+}
+.booking-hp-text button {
+    width: 70%;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+#home-group-photo{
+	width: 50vw;
+	height:auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.instagram-block{
+	position: relative;
+	width:100%;
+	display: flex;
+}
+.insta-right{
+	width: 50%;
+	height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.insta-left{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin-top: 17%;
+}
+.insta-left button{
+	margin-left: 10%;
+}
+.insta-left p{
+	margin-left: 10%;
+}
+.s-artist-instagram{
+	text-align: center;
+}
+.s-artist-instagram h4{
+	color: var(--font);
+	padding-top:5%;
+}
+.s-artist-contact-btn{
+	color: var(--primary);
+    background-color: var(--font);
+    border-radius: 15px;
+    width: 47vw;
+    font-size: 11vw;
+}
+.single-artist p{
+	padding-top: 10%;
+}
+}
+@media screen and (max-width:400px){
+.artist-sec ul {
+	grid-template-columns: minmax(100%, 100%);
+    grid-row-gap: 1vh;
+    padding: 0;
+    width: 100%;
+}
+.artist-tile-name{
+	font-size: 4rem;
+}
+.artist-sec {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30%;
+}
+.artist-group{
+	height: 52.2%;
+}
+.guest-sec {
+    height: 100%;
+}
+.guest-right > .guest-list {
+	flex-direction: column;
+	height: 100%;
+}
+.navbar-brand{
+	position: absolute;
+    width: 100%;
+	left: 86%;
+	top:7px;
+}
+.loc-left{
+	width:100%
+}
+.home{
+	margin-bottom: 0;
+}
+.home-logo{
+	width: 90%;
+}
+.video-section{
+	width:100%
+}
+#guest-tile-img {
+    width: 100%;
+}
+.guest-right {
+	height: 100%;
+}
+.guest-sec{
+	height: 100%;
+}
+.guest-tile{
+	height: 100%;
+}
+.guest-tile p {
+    font-size: 2rem;
+}
+.booking-hp-sec {
+	min-height: 100%;
+}
+.booking-hp-text{
+	width: 80%
+}
+.booking-content{
+	width:100%
+}
+.location-header {
+    font-size: 3rem;
+}
+.location-sec > .container {
+    width: 100%;
+    left: 0;
+}
+.booking-sec{
+	height: 300%;
+}
+.booking-right form {
+	width: 100%;
+}
+.booking-left >.text-container {
+    width: 100%;
+}
+.parallax{
+    background-attachment: unset;
+    min-height: 100%;
+}
+.parallax2{
+	   height: 100vh;
+	   background-size: cover;
+}
+.home-btn{
+	width: 50%;
+}
+.location-hp-sec {
+    height:fit-content;
+}
+.booking-hp-text button {
+	width: 90%;
+}
+.booking-hp-text a {
+    font-size: 6vw;
+}
+.next-arrow {
+	right: -15%;
+}
+.prev-arrow {
+    left: -25%;
+}
+.insta-right{
+	width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.insta-right img{
+	width: 100%;
+	height: auto;
+}
+.insta-left{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.insta-left button{
+	font-size: 15px;
+}
+.insta-left p{
+	font-size:20px
+
+}
+.single-artist p {
+    padding-top: 10%;
+    font-size: 6vw;
+}
+}
+
+@media screen and (max-width: 400px){
+.booking-hp-text a {
+    font-size: 8vw;
+}
+.booking-hp-text h2 {
+    font-size: 10vw;
+}
 }

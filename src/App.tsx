@@ -1,10 +1,12 @@
 import React from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SiteNav from "./components/Navbar/Navbar";
 import ArtistsPage from "./pages/Artists/Artists";
 import BookingPage from "./pages/Booking/Booking";
 import HomePage from "./pages/Home/Home";
 import LocationPage from "./pages/Location/Location";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "./App.css"
 
 export interface IAppProps {};
 
