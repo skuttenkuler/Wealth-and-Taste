@@ -1,20 +1,7 @@
-import { render } from "@testing-library/react";
 import React from "react"
 import { Image } from "react-bootstrap";
 import {Parallax} from "react-parallax"
 import data from '../../utils/data/data.json'
-
-interface Artist {
-    name: string, 
-    bio: string,
-    instagram: string,
-    headshot: string,
-    profile_pic: string,
-    phone_pic: string,
-    email: string,
-    images: string[],
-    apprentice: boolean
-}
 
 
 const HomePage: React.FunctionComponent = () => {
@@ -64,7 +51,7 @@ const HomePage: React.FunctionComponent = () => {
                         data.map(artist => {
                             return (
                             <li className="tile artist-tile col-lg-3" key={artist.name}>
-                         <a href="#">
+                         <a href={`artists/${artist.name}`}>
                              <Image id="artist-tile-img" src={artist.headshot}/>
                                  <p className="artist-tile-name">{artist.name}</p>
                                  {artist.apprentice ? <p className="apprentice">(apprentice)</p> :''}

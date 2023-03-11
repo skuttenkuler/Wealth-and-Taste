@@ -7,6 +7,7 @@ import HomePage from "./pages/Home/Home";
 import LocationPage from "./pages/Location/Location";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./App.css"
+import SArtist from "./pages/Artists/SingleArtist";
 
 export interface IAppProps {};
 
@@ -19,6 +20,7 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
             <Route path="/artists" element={<ArtistsPage/>} />
             <Route path="/location" element={<LocationPage/>} />
             <Route path="/booking" element={<BookingPage/>} />
+            <Route path="/artists/:name" element={<SArtist/>} />
           </Routes>
         </BrowserRouter>
     )
