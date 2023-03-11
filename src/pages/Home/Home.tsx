@@ -1,11 +1,24 @@
+import { render } from "@testing-library/react";
 import React from "react"
 import { Image } from "react-bootstrap";
 import {Parallax} from "react-parallax"
+import data from '../../utils/data/data.json'
 
-export interface IHomePageProps {};
+interface Artist {
+    name: string, 
+    bio: string,
+    instagram: string,
+    headshot: string,
+    profile_pic: string,
+    phone_pic: string,
+    email: string,
+    images: string[],
+    apprentice: boolean
+}
 
-const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
-    return (
+
+const HomePage: React.FunctionComponent = () => {
+        return (
         <div className="home" >
             <Parallax className="title-sec parallax">
                 
@@ -23,7 +36,7 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
             <section className="location-hp-sec">
         <div className="location-hp-container">
             <section className="loc-left">
-                <img src="https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/shop/shop3.jpg" alt="Shop Image"/>
+                <Image src="https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/shop/shop3.jpg" alt="Shop Image"/>
             </section>
             <section className="loc-right">
                     <p>Home to award winning tattoo artists. Located in East Nashville!</p>
@@ -45,6 +58,24 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
         <div className="artist-header">
             <h4>Meet the Family</h4>
         </div>
+        <section className="artist-sec">
+                <ul className="artist-hp-list">
+                    {
+                        data.map(artist => {
+                            return (
+                            <li className="tile artist-tile col-lg-3" key={artist.name}>
+                         <a href="#">
+                             <Image id="artist-tile-img" src={artist.headshot}/>
+                                 <p className="artist-tile-name">{artist.name}</p>
+                                 {artist.apprentice ? <p className="apprentice">(apprentice)</p> :''}
+                         </a>
+                     </li>
+                           
+                        )
+                    })
+                }         
+                </ul>
+        </section>
         </div>)
 
 };
