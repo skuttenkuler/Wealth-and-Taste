@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SiteNav from "./components/Navbar/Navbar";
 import ArtistsPage from "./pages/Artists/Artists";
 import BookingPage from "./pages/Booking/Booking";
@@ -13,7 +13,7 @@ export interface IAppProps {};
 
 const App: React.FunctionComponent<IAppProps> = (props) => {
     return (
-        <BrowserRouter>
+        <Router>
           <SiteNav/>
           <Routes>
             <Route path="/" element={<HomePage/>} />
@@ -22,7 +22,7 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
             <Route path="/booking" element={<BookingPage/>} />
             <Route path="/artists/:name" element={<SArtist/>} />
           </Routes>
-        </BrowserRouter>
+        </Router>
     )
 };
 

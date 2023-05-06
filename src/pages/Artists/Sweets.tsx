@@ -4,8 +4,9 @@ import React from "react"
 
 const Sweets: React.FunctionComponent = () => {
     return (
+        <></>
 //     <div className="single-artist">
-//         <Image src={data.} alt="">
+//         <Image src={data} alt="">
 //         <h2 className="s-artist-headline">{data.name}</h2>
 //             {data.email ? 
 //                 <a className="s-artist-contact-btn" href={`mailto:${data.email}`}>Contact</a> | 
@@ -31,7 +32,7 @@ const Sweets: React.FunctionComponent = () => {
 //         </div>
 //     </div>
 // </div>
-<></>
+
     )
 };
 

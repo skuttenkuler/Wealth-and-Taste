@@ -1,6 +1,7 @@
 import React from "react"
 import { Image } from "react-bootstrap";
 import {Parallax} from "react-parallax"
+import Footer from "../../components/Footer/Footer";
 import data from '../../utils/data/data.json'
 
 
@@ -52,7 +53,7 @@ const HomePage: React.FunctionComponent = () => {
                             return (
                             <li className="tile artist-tile col-lg-3" key={artist.name}>
                          <a href={`artists/${artist.name}`}>
-                             <Image id="artist-tile-img" src={artist.headshot}/>
+                             <Image id="artist-tile-img" src={artist.headshot} width={500} height={500}/>
                                  <p className="artist-tile-name">{artist.name}</p>
                                  {artist.apprentice ? <p className="apprentice">(apprentice)</p> :''}
                          </a>
@@ -63,6 +64,7 @@ const HomePage: React.FunctionComponent = () => {
                 }         
                 </ul>
         </section>
+        <Footer/>
         </div>)
 
 };

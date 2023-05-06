@@ -7,18 +7,18 @@
             "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/sweets-main.jpg",
             "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/sweets_iphone.png",
             "email": "sweetstattoo@yahoo.com",
-            "images": [
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/bird.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/butterfly.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/cocktail.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/fearandloathing.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/fighter.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/horses.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/lemon-bird.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/skull-crow.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/sorceress.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/wolf-lady.jpg"
-            ],
+            "images": {
+                "image1":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/bird.jpg",
+               "image2": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/butterfly.jpg",
+               "image3": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/cocktail.jpg",
+               "image4": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/fearandloathing.jpg",
+               "image5": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/fighter.jpg",
+               "image6": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/horses.jpg",
+               "image7": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/lemon-bird.jpg",
+               "image8": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/skull-crow.jpg",
+               "image9": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/sorceress.jpg",
+               "image10": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/sweets/tattoos/wolf-lady.jpg"
+        },
             "apprentice": false
         },
         {
@@ -29,18 +29,18 @@
             "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/colby-main.jpg",
             "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/colby_iphone.png",
             "email": null,
-            "images": [
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/apple.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/bowie.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/cheezit.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/Circa-Survive.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/dagger-flower.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/gummy-bear.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/joker.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/puppy.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/skull-joker.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/strawberry-candy.jpg"
-            ],
+            "images": {
+                "image1":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/apple.jpg",
+                "image2":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/bowie.jpg",
+               "image3": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/cheezit.jpg",
+               "image4": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/Circa-Survive.jpg",
+               "image5": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/dagger-flower.jpg",
+               "image6": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/gummy-bear.jpg",
+                "image7":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/joker.jpg",
+                "image8":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/puppy.jpg",
+               "image9": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/skull-joker.jpg",
+               "image10": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/colby/tattoos/strawberry-candy.jpg"
+            },
             "apprentice": false
         },
         {
@@ -51,18 +51,18 @@
             "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/butcher-main.jpg",
             "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/butcher_iphone.png",
             "email": null,
-            "images": [
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/arm-flower.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/cactus.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/chain.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/chalice.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/eagle.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/flower.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/gorilla.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/hands-rose.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/panther-stomach.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/plague-doctor.jpg"
-            ],
+            "images": {
+               "image1": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/arm-flower.jpg",
+               "image2": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/cactus.jpg",
+               "image3": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/chain.jpg",
+               "image4": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/chalice.jpg",
+               "image5": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/eagle.jpg",
+               "image6": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/flower.jpg",
+               "image7": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/gorilla.jpg",
+               "image8": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/hands-rose.jpg",
+               "image9": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/panther-stomach.jpg",
+               "image10": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/butcher/tattoos/plague-doctor.jpg"
+            },
             "apprentice": false
         },
         {
@@ -73,18 +73,40 @@
             "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/dan-main.jpg",
             "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/danny_iphone.png",
             "email": "sideshowdannytattoos@gmail.com",
-            "images": [
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/bird-skull.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/coffin.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/dagger-moth.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/evil-clown.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/freddy-krueger.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/halloween.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/jack-shining.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/moth-skull.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/owl.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/pat-bateman.jpg"
-            ],
+            "images": {
+               "image1": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/bird-skull.jpg",
+                "image2":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/coffin.jpg",
+               "image3": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/dagger-moth.jpg",
+               "image4": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/evil-clown.jpg",
+               "image5": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/freddy-krueger.jpg",
+               "image6": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/halloween.jpg",
+               "image7": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/jack-shining.jpg",
+               "image8": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/moth-skull.jpg",
+                "image9":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/owl.jpg",
+               "image10": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/dan/tattoos/pat-bateman.jpg"
+            },
+            "apprentice": false
+        },
+        {
+            "name": "Mav",
+            "bio": "Mav has been tattooing for 4 years and just recently relocated to Nashville. He specializes in traditional & neo traditional style tattoos with bold lines and bright colors. However, he is always up for any project. For all bookings contact Mav via Instagram @lost.cause.tattoo.",
+            "instagram": "https://www.instagram.com/lost.cause.tattoo/",
+            "headshot": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/Mav_main.jpg",
+            "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/Mav_main.jpg",
+            "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/mav_iphone.png",
+            "email": "",
+            "images": {
+                "image1":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/grave.jpeg",
+                "image2":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/alien.jpeg",
+                "image3":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/bluerose.jpeg",
+                "image4":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/heart-sword.jpeg",
+                "image5":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/lastofus.jpeg",
+                "image6":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/mask.jpeg",
+                "image7":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/moth.jpeg",
+                "image8":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/mugroses.jpeg",
+                "image9":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/panther.jpeg",
+                "image10":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/mav/redheartsword.jpeg"
+            },
             "apprentice": false
         },
         {
@@ -95,15 +117,15 @@
             "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/jade-main.jpg",
             "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/jade_iphone.png",
             "email": null,
-            "images": [
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-1.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-2.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-3.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-4.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-5.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-6.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-7.jpg"
-            ],
+            "images": {
+                "image1":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-1.jpg",
+                "image2":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-2.jpg",
+                "image3":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-3.jpg",
+                "image4":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-4.jpg",
+                "image5":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-5.jpg",
+                "image6":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-6.jpg",
+                "image7":"https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/jade/work/teeth-deco-7.jpg"
+            },
             "apprentice": false
         },
         {
@@ -114,18 +136,18 @@
             "profile_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/emmajane.jpg",
             "phone_pic": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/emmajane_iphone.png",
             "email": null,
-            "images": [
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting1.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting2.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting3.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting4.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting5.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting6.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting7.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting8.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting9.jpg",
-                "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting10.jpg"
-            ],
+            "images": {
+               "image1": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting1.jpg",
+               "image2": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting2.jpg",
+               "image3": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting3.jpg",
+               "image4": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting4.jpg",
+               "image5": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting5.jpg",
+               "image6": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting6.jpg",
+               "image7": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting7.jpg",
+               "image8": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting8.jpg",
+               "image9": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting9.jpg",
+               "image10": "https://wat-asset-bucket.s3.us-east-2.amazonaws.com/assets/assets/emmajane/paintings/painting10.jpg"
+            },
             "apprentice": true
         }
     ]
